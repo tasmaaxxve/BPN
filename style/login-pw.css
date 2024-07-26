@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #0293D2;
+    height: 60px;
+}
+
+.steps-container {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 10px 0;
+}
+
+.steps-container h2 {
+    margin: 0;
+    color: #013b53;
+    font-size: 20px;
+}
+
+.steps-indicator {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.step {
+    height: 5px;
+    width: 25%;
+    background-color: #bbb;
+    margin: 0 2px;
+}
+
+.step.active {
+    background-color: #0293D2;
+}
+.form-container h3 {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+.form-container {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-wrapper {
+    margin-bottom: 20px;
+    padding: 0; /* Asegurarse de que no haya padding adicional */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+
+input {
+    width: calc(100% - 20px); /* Ajusta el ancho para tener en cuenta el padding */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0; /* Elimina el margin por defecto */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+}
+
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.continue-btn {
+    background-color: #bbb;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background-color: transparent;
+    color: #bbb;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}

